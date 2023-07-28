@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".voicecall">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="494dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:text="Press the button to join a channel" />
+
+        <TextView
+            android:id="@+id/Nametext"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="310dp"
+            android:textAlignment="center"
+            android:textFontWeight="800"
+            android:textSize="80px"
+            android:textAllCaps="true"
+            android:textColor="@color/purple_700"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="10dp"
+            android:text="Name" />
+
+
+        <!--        <ImageView-->
+<!--            android:id="@+id/userImage"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_marginStart="108dp"-->
+<!--            android:layout_marginEnd="100dp"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:background="@android:color/darker_gray"/>-->
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="150dp"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                app:srcCompat="@drawable/avatar"
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/joinLeaveButton"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginTop="400dp"
+            android:onClick="joinLeaveChannel"
+            android:text="Leave" />
+
+    </RelativeLayout>
+</ScrollView>
